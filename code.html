@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" dir="rtl" lang="he">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Your Story - צילום חתונות יוקרתי</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;600;700;800&family=Heebo:wght@100;300;400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#0F4C3F",
+            "on-primary": "#ffffff",
+            "secondary": "#B87333",
+            "surface": "#faf6f0",
+            "background": "#faf6f0",
+            "on-surface": "#1e211f",
+            "deep-emerald": "#0F4C3F",
+            "rose-gold": "#B87333"
+          },
+          fontFamily: {
+            "headline": ["Assistant", "sans-serif"],
+            "body": ["Heebo", "sans-serif"],
+            "label": ["Heebo", "sans-serif"],
+            "accent": ["Assistant", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.5rem",
+            "lg": "1rem",
+            "xl": "1.5rem",
+            "full": "9999px"
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+
+    .hero-overlay {
+      background: linear-gradient(to bottom, rgba(15, 76, 63, 0.6), rgba(15, 76, 63, 0.3));
+    }
+
+    .text-rose-gold { color: #B87333; }
+    .bg-rose-gold { background-color: #B87333; }
+    .border-rose-gold { border-color: #B87333; }
+
+    h1, h2, h3, h4 {
+      text-align: center;
+    }
+  </style>
+</head>
+<body class="bg-background text-on-background font-body antialiased">
+  <nav class="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-md border-b border-deep-emerald/10 shadow-sm">
+    <div class="flex justify-between items-center px-8 py-3 max-w-7xl mx-auto">
+      <div class="flex items-center gap-4">
+        <img alt="Your Story Logo" class="h-12 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0uibV-m52TzUVGuByg22gGGaZzqL5NmkrjzrCSzDZwTZWNghFCmswRIyWs0yq4tapOlA1WtiXVPLudm_zhkkUNrVPpeOg9eKa5HkJ5PygLa47WOLoZH4xV-NLjZh175Y9Z5az7GzTNdgS93kB4Q4hkl7w_55iu2XQutLaAm8nHoaycKATIIdkOIdznFbx_r-LP2Cs2AArR70G2jbIIE0Kb0VS84c1zMN0C2EoBNVd6ZAiY69E7M9sHS24j_LuGfD_ywpaHX6adDcww" />
+      </div>
+      <div class="hidden md:flex items-center space-x-reverse space-x-8">
+        <a class="text-deep-emerald border-b-2 border-rose-gold pb-1 font-semibold text-sm transition-colors" href="#">בית</a>
+        <a class="text-deep-emerald/70 hover:text-rose-gold font-medium text-sm transition-colors" href="#">פורטפוליו</a>
+        <a class="text-deep-emerald/70 hover:text-rose-gold font-medium text-sm transition-colors" href="#">עלינו</a>
+        <a class="text-deep-emerald/70 hover:text-rose-gold font-medium text-sm transition-colors" href="#">שירותים</a>
+        <a class="text-deep-emerald/70 hover:text-rose-gold font-medium text-sm transition-colors" href="#">צור קשר</a>
+      </div>
+      <button class="bg-deep-emerald hover:bg-deep-emerald/90 text-white px-6 py-2 rounded-full font-label text-sm tracking-wide transition-all duration-300">
+        צרו קשר
+      </button>
+    </div>
+  </nav>
+
+  <header class="relative h-screen w-full flex items-center justify-center overflow-hidden">
+    <div class="absolute inset-0 bg-cover bg-center transition-transform duration-1000 scale-105" style="background-image: url('https://lh3.googleusercontent.com/aida/ADBb0uj4OHSORJuTiYWx2NWbRRvXKT0jVxuGrLU6vr9MZ7B0viSGTrc7OYDH65VcLfBDtyF0x9fp3Y6sj1ArgKzchMEm2lOk2VHtSXYUjMIZ-J2eVPiKEHutP8CgyIR4j6uRzwerBhNwRjr1dT9bFJZznsZMQxc82XAlgR98zcTQJrlupgNM5Op5uEY1PDi5YdOVJuBTCIP63S1XHcK_ZEwWMqHqcxIhQHS4V3zIaX76DAuCmXb0f4psSj_TAWeMHvCMwqkkSSNgJjB28g');">
+      <div class="absolute inset-0 hero-overlay"></div>
+    </div>
+    <div class="relative z-10 text-center px-6 max-w-5xl mx-auto">
+      <h1 class="font-headline text-5xl md:text-7xl lg:text-8xl text-white mb-6 leading-tight drop-shadow-lg font-bold">
+        הסיפור שלכם: רגעים נצחיים, זיכרונות בלתי נשכחים.
+      </h1>
+      <h2 class="font-accent text-xl md:text-2xl text-white/90 mb-10 tracking-[0.1em] font-light drop-shadow-md">
+        צילום חתונות יוקרתי לזוגות שמעריכים אמנות.
+      </h2>
+      <div class="flex justify-center">
+        <button class="bg-rose-gold hover:scale-105 transition-transform duration-300 text-white px-10 py-5 rounded-full font-headline text-lg md:text-xl shadow-xl font-bold">
+          בדקו זמינות ובקשו הצעת מחיר
+        </button>
+      </div>
+    </div>
+    <div class="absolute bottom-10 left-1/2 -translate-x-1/2 text-white animate-bounce">
+      <span class="material-symbols-outlined text-4xl">keyboard_double_arrow_down</span>
+    </div>
+  </header>
+
+  <section class="py-24 px-8 max-w-7xl mx-auto">
+    <div class="grid md:grid-cols-2 gap-16 items-center">
+      <div class="relative group">
+        <div class="absolute -inset-4 bg-deep-emerald/5 rounded-xl transition-all group-hover:inset-0"></div>
+        <img alt="רגע אינטימי" class="relative z-10 w-full aspect-[4/5] object-cover rounded-xl shadow-2xl" src="https://lh3.googleusercontent.com/aida/ADBb0uhhbmTQcppEXqAJEByFUes-irIb64kgrh0Qe7am6QKlagHP5HLi3C2FQigb10TU8Pfv88675OsfTegCl65jThclJom-BOa1-5PHs_CriHEIKVeWsxn0fH7F_b_9-GOx0G9KXyaUWWj72-0gAcYjimNDHPio9oyAi_hgRs3XAxJK9-fNRyFpFBYRyRM9_18R3S3gMS_5ZFMlGlFJjv3cuYoqFj5mYUgxI6kGVfmU49-WJqE_gJ82AXv2SEot6zlwT2oCKyrm-3G4dQ" />
+      </div>
+      <div class="space-y-8 text-right">
+        <div class="flex justify-start md:justify-start">
+          <span class="font-accent text-rose-gold tracking-widest uppercase text-sm font-bold border-r-4 border-rose-gold pr-3">הפילוסופיה שלנו</span>
+        </div>
+        <h3 class="font-headline text-4xl md:text-5xl text-deep-emerald leading-tight text-right">מושרשים באמנות הסיפור וביופי של הקשר האנושי.</h3>
+        <p class="text-on-surface/80 text-lg leading-relaxed font-body">
+          אנחנו מאמינים שלכל זוג יש קצב ייחודי, שפה שקטה של מבטים ומגע שמגדירה את הקשר שלהם. הגישה שלנו היא לא רק לתעד אירוע, אלא ליצור מורשת ויזואלית שמרגישה אותנטית כמו היום שבו נוצרה. אנו משלבים אסתטיקה של אמנות עדינה עם ספונטניות מערכתית כדי לתפוס את הנשמה של החגיגה שלכם.
+        </p>
+        <div class="pt-4">
+          <a class="inline-flex items-center gap-2 text-rose-gold font-bold hover:gap-4 transition-all duration-300 group" href="#">
+            גלו את הגישה שלנו
+            <span class="material-symbols-outlined rotate-180">arrow_right_alt</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-white py-24 px-8 border-y border-deep-emerald/5">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-16">
+        <h3 class="font-headline text-4xl md:text-5xl text-deep-emerald mb-4">גלריות נבחרות</h3>
+        <p class="text-on-surface/60 font-body max-w-2xl mx-auto">אוסף אצור של סיפורי אהבה מרחבי העולם, כל אחד מהם יצירת מופת ייחודית.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+        <div class="group relative overflow-hidden rounded-xl aspect-[3/4] cursor-pointer shadow-lg">
+          <img alt="גלריה נבחרת 01" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" src="assets/user-photos/photo-01.jpg" />
+          <div class="absolute inset-0 bg-gradient-to-t from-deep-emerald/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8 text-right">
+            <span class="text-white/80 text-xs font-accent tracking-widest uppercase mb-2">גלריה נבחרת</span>
+            <h4 class="text-white font-headline text-2xl text-right">רגע 01</h4>
+          </div>
+        </div>
+        <div class="group relative overflow-hidden rounded-xl aspect-[3/4] cursor-pointer shadow-lg">
+          <img alt="גלריה נבחרת 02" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" src="assets/user-photos/photo-02.jpg" />
+          <div class="absolute inset-0 bg-gradient-to-t from-deep-emerald/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8 text-right">
+            <span class="text-white/80 text-xs font-accent tracking-widest uppercase mb-2">גלריה נבחרת</span>
+            <h4 class="text-white font-headline text-2xl text-right">רגע 02</h4>
+          </div>
+        </div>
+        <div class="group relative overflow-hidden rounded-xl aspect-[3/4] cursor-pointer shadow-lg">
+          <img alt="גלריה נבחרת 03" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" src="assets/user-photos/photo-03.jpg" />
+          <div class="absolute inset-0 bg-gradient-to-t from-deep-emerald/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8 text-right">
+            <span class="text-white/80 text-xs font-accent tracking-widest uppercase mb-2">גלריה נבחרת</span>
+            <h4 class="text-white font-headline text-2xl text-right">רגע 03</h4>
+          </div>
+        </div>
+        <div class="group relative overflow-hidden rounded-xl aspect-[3/4] cursor-pointer shadow-lg">
+          <img alt="גלריה נבחרת 04" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" src="assets/user-photos/photo-04.jpg" />
+          <div class="absolute inset-0 bg-gradient-to-t from-deep-emerald/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8 text-right">
+            <span class="text-white/80 text-xs font-accent tracking-widest uppercase mb-2">גלריה נבחרת</span>
+            <h4 class="text-white font-headline text-2xl text-right">רגע 04</h4>
+          </div>
+        </div>
+        <div class="group relative overflow-hidden rounded-xl aspect-[3/4] cursor-pointer shadow-lg">
+          <img alt="גלריה נבחרת 05" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" src="assets/user-photos/photo-05.jpg" />
+          <div class="absolute inset-0 bg-gradient-to-t from-deep-emerald/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8 text-right">
+            <span class="text-white/80 text-xs font-accent tracking-widest uppercase mb-2">גלריה נבחרת</span>
+            <h4 class="text-white font-headline text-2xl text-right">רגע 05</h4>
+          </div>
+        </div>
+        <div class="group relative overflow-hidden rounded-xl aspect-[3/4] cursor-pointer shadow-lg">
+          <img alt="גלריה נבחרת 06" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" src="assets/user-photos/photo-06.jpg" />
+          <div class="absolute inset-0 bg-gradient-to-t from-deep-emerald/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8 text-right">
+            <span class="text-white/80 text-xs font-accent tracking-widest uppercase mb-2">גלריה נבחרת</span>
+            <h4 class="text-white font-headline text-2xl text-right">רגע 06</h4>
+          </div>
+        </div>
+        <div class="group relative overflow-hidden rounded-xl aspect-[3/4] cursor-pointer shadow-lg">
+          <img alt="גלריה נבחרת 07" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" src="assets/user-photos/photo-07.jpg" />
+          <div class="absolute inset-0 bg-gradient-to-t from-deep-emerald/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8 text-right">
+            <span class="text-white/80 text-xs font-accent tracking-widest uppercase mb-2">גלריה נבחרת</span>
+            <h4 class="text-white font-headline text-2xl text-right">רגע 07</h4>
+          </div>
+        </div>
+        <div class="group relative overflow-hidden rounded-xl aspect-[3/4] cursor-pointer shadow-lg">
+          <img alt="גלריה נבחרת 08" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" src="assets/user-photos/photo-08.jpg" />
+          <div class="absolute inset-0 bg-gradient-to-t from-deep-emerald/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8 text-right">
+            <span class="text-white/80 text-xs font-accent tracking-widest uppercase mb-2">גלריה נבחרת</span>
+            <h4 class="text-white font-headline text-2xl text-right">רגע 08</h4>
+          </div>
+        </div>
+        <div class="group relative overflow-hidden rounded-xl aspect-[3/4] cursor-pointer shadow-lg">
+          <img alt="גלריה נבחרת 09" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" src="assets/user-photos/photo-09.jpg" />
+          <div class="absolute inset-0 bg-gradient-to-t from-deep-emerald/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8 text-right">
+            <span class="text-white/80 text-xs font-accent tracking-widest uppercase mb-2">גלריה נבחרת</span>
+            <h4 class="text-white font-headline text-2xl text-right">רגע 09</h4>
+          </div>
+        </div>
+        <div class="group relative overflow-hidden rounded-xl aspect-[3/4] cursor-pointer shadow-lg">
+          <img alt="גלריה נבחרת 10" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" src="assets/user-photos/photo-10.jpg" />
+          <div class="absolute inset-0 bg-gradient-to-t from-deep-emerald/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8 text-right">
+            <span class="text-white/80 text-xs font-accent tracking-widest uppercase mb-2">גלריה נבחרת</span>
+            <h4 class="text-white font-headline text-2xl text-right">רגע 10</h4>
+          </div>
+        </div>
+        <div class="group relative overflow-hidden rounded-xl aspect-[3/4] cursor-pointer shadow-lg">
+          <img alt="גלריה נבחרת 11" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" src="assets/user-photos/photo-11.jpg" />
+          <div class="absolute inset-0 bg-gradient-to-t from-deep-emerald/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8 text-right">
+            <span class="text-white/80 text-xs font-accent tracking-widest uppercase mb-2">גלריה נבחרת</span>
+            <h4 class="text-white font-headline text-2xl text-right">רגע 11</h4>
+          </div>
+        </div>
+        <div class="group relative overflow-hidden rounded-xl aspect-[3/4] cursor-pointer shadow-lg">
+          <img alt="גלריה נבחרת 12" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" src="assets/user-photos/photo-12.jpg" />
+          <div class="absolute inset-0 bg-gradient-to-t from-deep-emerald/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8 text-right">
+            <span class="text-white/80 text-xs font-accent tracking-widest uppercase mb-2">גלריה נבחרת</span>
+            <h4 class="text-white font-headline text-2xl text-right">רגע 12</h4>
+          </div>
+        </div>
+        <div class="group relative overflow-hidden rounded-xl aspect-[3/4] cursor-pointer shadow-lg">
+          <img alt="גלריה נבחרת 13" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" src="assets/user-photos/photo-13.jpg" />
+          <div class="absolute inset-0 bg-gradient-to-t from-deep-emerald/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8 text-right">
+            <span class="text-white/80 text-xs font-accent tracking-widest uppercase mb-2">גלריה נבחרת</span>
+            <h4 class="text-white font-headline text-2xl text-right">רגע 13</h4>
+          </div>
+        </div>
+        <div class="group relative overflow-hidden rounded-xl aspect-[3/4] cursor-pointer shadow-lg">
+          <img alt="גלריה נבחרת 14" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" src="assets/user-photos/photo-14.jpg" />
+          <div class="absolute inset-0 bg-gradient-to-t from-deep-emerald/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8 text-right">
+            <span class="text-white/80 text-xs font-accent tracking-widest uppercase mb-2">גלריה נבחרת</span>
+            <h4 class="text-white font-headline text-2xl text-right">רגע 14</h4>
+          </div>
+        </div>
+        <div class="group relative overflow-hidden rounded-xl aspect-[3/4] cursor-pointer shadow-lg">
+          <img alt="גלריה נבחרת 15" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" src="assets/user-photos/photo-15.jpg" />
+          <div class="absolute inset-0 bg-gradient-to-t from-deep-emerald/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8 text-right">
+            <span class="text-white/80 text-xs font-accent tracking-widest uppercase mb-2">גלריה נבחרת</span>
+            <h4 class="text-white font-headline text-2xl text-right">רגע 15</h4>
+          </div>
+        </div>
+        <div class="group relative overflow-hidden rounded-xl aspect-[3/4] cursor-pointer shadow-lg">
+          <img alt="גלריה נבחרת 16" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" src="assets/user-photos/photo-16.jpg" />
+          <div class="absolute inset-0 bg-gradient-to-t from-deep-emerald/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8 text-right">
+            <span class="text-white/80 text-xs font-accent tracking-widest uppercase mb-2">גלריה נבחרת</span>
+            <h4 class="text-white font-headline text-2xl text-right">רגע 16</h4>
+          </div>
+        </div>
+        <div class="group relative overflow-hidden rounded-xl aspect-[3/4] cursor-pointer shadow-lg">
+          <img alt="גלריה נבחרת 17" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" src="assets/user-photos/photo-17.jpg" />
+          <div class="absolute inset-0 bg-gradient-to-t from-deep-emerald/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8 text-right">
+            <span class="text-white/80 text-xs font-accent tracking-widest uppercase mb-2">גלריה נבחרת</span>
+            <h4 class="text-white font-headline text-2xl text-right">רגע 17</h4>
+          </div>
+        </div>
+        <div class="group relative overflow-hidden rounded-xl aspect-[3/4] cursor-pointer shadow-lg">
+          <img alt="גלריה נבחרת 18" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" src="assets/user-photos/photo-18.jpg" />
+          <div class="absolute inset-0 bg-gradient-to-t from-deep-emerald/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8 text-right">
+            <span class="text-white/80 text-xs font-accent tracking-widest uppercase mb-2">גלריה נבחרת</span>
+            <h4 class="text-white font-headline text-2xl text-right">רגע 18</h4>
+          </div>
+        </div>
+        <div class="group relative overflow-hidden rounded-xl aspect-[3/4] cursor-pointer shadow-lg">
+          <img alt="גלריה נבחרת 19" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" src="assets/user-photos/photo-19.jpg" />
+          <div class="absolute inset-0 bg-gradient-to-t from-deep-emerald/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8 text-right">
+            <span class="text-white/80 text-xs font-accent tracking-widest uppercase mb-2">גלריה נבחרת</span>
+            <h4 class="text-white font-headline text-2xl text-right">רגע 19</h4>
+          </div>
+        </div>
+        <div class="group relative overflow-hidden rounded-xl aspect-[3/4] cursor-pointer shadow-lg">
+          <img alt="גלריה נבחרת 20" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" src="assets/user-photos/photo-20.jpg" />
+          <div class="absolute inset-0 bg-gradient-to-t from-deep-emerald/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8 text-right">
+            <span class="text-white/80 text-xs font-accent tracking-widest uppercase mb-2">גלריה נבחרת</span>
+            <h4 class="text-white font-headline text-2xl text-right">רגע 20</h4>
+          </div>
+        </div>
+        <div class="group relative overflow-hidden rounded-xl aspect-[3/4] cursor-pointer shadow-lg">
+          <img alt="גלריה נבחרת 21" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" src="assets/user-photos/photo-21.jpg" />
+          <div class="absolute inset-0 bg-gradient-to-t from-deep-emerald/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8 text-right">
+            <span class="text-white/80 text-xs font-accent tracking-widest uppercase mb-2">גלריה נבחרת</span>
+            <h4 class="text-white font-headline text-2xl text-right">רגע 21</h4>
+          </div>
+        </div>
+        <div class="group relative overflow-hidden rounded-xl aspect-[3/4] cursor-pointer shadow-lg">
+          <img alt="גלריה נבחרת 22" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" src="assets/user-photos/photo-22.jpg" />
+          <div class="absolute inset-0 bg-gradient-to-t from-deep-emerald/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8 text-right">
+            <span class="text-white/80 text-xs font-accent tracking-widest uppercase mb-2">גלריה נבחרת</span>
+            <h4 class="text-white font-headline text-2xl text-right">רגע 22</h4>
+          </div>
+        </div>
+        <div class="group relative overflow-hidden rounded-xl aspect-[3/4] cursor-pointer shadow-lg">
+          <img alt="גלריה נבחרת 23" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" src="assets/user-photos/photo-23.jpg" />
+          <div class="absolute inset-0 bg-gradient-to-t from-deep-emerald/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8 text-right">
+            <span class="text-white/80 text-xs font-accent tracking-widest uppercase mb-2">גלריה נבחרת</span>
+            <h4 class="text-white font-headline text-2xl text-right">רגע 23</h4>
+          </div>
+        </div>
+        <div class="group relative overflow-hidden rounded-xl aspect-[3/4] cursor-pointer shadow-lg">
+          <img alt="גלריה נבחרת 24" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" src="assets/user-photos/photo-24.jpg" />
+          <div class="absolute inset-0 bg-gradient-to-t from-deep-emerald/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8 text-right">
+            <span class="text-white/80 text-xs font-accent tracking-widest uppercase mb-2">גלריה נבחרת</span>
+            <h4 class="text-white font-headline text-2xl text-right">רגע 24</h4>
+          </div>
+        </div>
+        <div class="group relative overflow-hidden rounded-xl aspect-[3/4] cursor-pointer shadow-lg">
+          <img alt="גלריה נבחרת 25" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" src="assets/user-photos/photo-25.jpg" />
+          <div class="absolute inset-0 bg-gradient-to-t from-deep-emerald/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8 text-right">
+            <span class="text-white/80 text-xs font-accent tracking-widest uppercase mb-2">גלריה נבחרת</span>
+            <h4 class="text-white font-headline text-2xl text-right">רגע 25</h4>
+          </div>
+        </div>
+        <div class="group relative overflow-hidden rounded-xl aspect-[3/4] cursor-pointer shadow-lg">
+          <img alt="גלריה נבחרת 26" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" src="assets/user-photos/photo-26.jpg" />
+          <div class="absolute inset-0 bg-gradient-to-t from-deep-emerald/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8 text-right">
+            <span class="text-white/80 text-xs font-accent tracking-widest uppercase mb-2">גלריה נבחרת</span>
+            <h4 class="text-white font-headline text-2xl text-right">רגע 26</h4>
+          </div>
+        </div>
+        <div class="group relative overflow-hidden rounded-xl aspect-[3/4] cursor-pointer shadow-lg">
+          <img alt="גלריה נבחרת 27" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" src="assets/user-photos/photo-27.jpg" />
+          <div class="absolute inset-0 bg-gradient-to-t from-deep-emerald/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8 text-right">
+            <span class="text-white/80 text-xs font-accent tracking-widest uppercase mb-2">גלריה נבחרת</span>
+            <h4 class="text-white font-headline text-2xl text-right">רגע 27</h4>
+          </div>
+        </div>
+        <div class="group relative overflow-hidden rounded-xl aspect-[3/4] cursor-pointer shadow-lg">
+          <img alt="גלריה נבחרת 28" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" src="assets/user-photos/photo-28.jpg" />
+          <div class="absolute inset-0 bg-gradient-to-t from-deep-emerald/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8 text-right">
+            <span class="text-white/80 text-xs font-accent tracking-widest uppercase mb-2">גלריה נבחרת</span>
+            <h4 class="text-white font-headline text-2xl text-right">רגע 28</h4>
+          </div>
+        </div>
+        <div class="group relative overflow-hidden rounded-xl aspect-[3/4] cursor-pointer shadow-lg">
+          <img alt="גלריה נבחרת 29" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" src="assets/user-photos/photo-29.png" />
+          <div class="absolute inset-0 bg-gradient-to-t from-deep-emerald/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8 text-right">
+            <span class="text-white/80 text-xs font-accent tracking-widest uppercase mb-2">גלריה נבחרת</span>
+            <h4 class="text-white font-headline text-2xl text-right">רגע 29</h4>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center">
+        <button class="px-12 py-4 border-2 border-rose-gold text-rose-gold rounded-full hover:bg-rose-gold hover:text-white transition-all font-bold uppercase tracking-widest text-sm">צפו בכל הסיפורים</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 px-8 overflow-hidden bg-background">
+    <div class="max-w-7xl mx-auto relative">
+      <div class="text-center mb-16">
+        <span class="material-symbols-outlined text-rose-gold text-5xl opacity-40 mb-4" style="font-variation-settings: 'FILL' 1;">format_quote</span>
+        <h3 class="font-headline text-4xl text-deep-emerald">המילים של אלו שהפקידו את יומם בידינו</h3>
+      </div>
+      <div class="grid md:grid-cols-2 gap-12 items-stretch">
+        <div class="bg-white p-10 rounded-3xl flex flex-col justify-between shadow-sm hover:shadow-md transition-all duration-300 border-t-4 border-rose-gold">
+          <p class="text-on-surface italic text-xl font-body leading-relaxed mb-8 text-right">
+            "הצוות של Your Story תפס ניואנסים בחתונה שלנו שאפילו לא שמנו לב שהם קורים. להסתכל בגלריה שלנו הרגיש כמו לחוות את היום מחדש עם כל האינטנסיביות והשמחה. באמת מאסטרים של המלאכה שלהם."
+          </p>
+          <div class="flex items-center gap-4 flex-row-reverse">
+            <div class="w-14 h-14 rounded-full bg-deep-emerald/10 overflow-hidden ring-2 ring-rose-gold/20">
+              <img alt="אלינור ויהונתן" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/ADBb0uhhbmTQcppEXqAJEByFUes-irIb64kgrh0Qe7am6QKlagHP5HLi3C2FQigb10TU8Pfv88675OsfTegCl65jThclJom-BOa1-5PHs_CriHEIKVeWsxn0fH7F_b_9-GOx0G9KXyaUWWj72-0gAcYjimNDHPio9oyAi_hgRs3XAxJK9-fNRyFpFBYRyRM9_18R3S3gMS_5ZFMlGlFJjv3cuYoqFj5mYUgxI6kGVfmU49-WJqE_gJ82AXv2SEot6zlwT2oCKyrm-3G4dQ" />
+            </div>
+            <div class="text-right">
+              <h5 class="font-bold text-deep-emerald">אלינור ויהונתן</h5>
+              <p class="text-sm text-rose-gold font-accent uppercase tracking-wider">ירושלים, מאי 2023</p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-white p-10 rounded-3xl flex flex-col justify-between shadow-sm hover:shadow-md transition-all duration-300 border-t-4 border-rose-gold">
+          <p class="text-on-surface italic text-xl font-body leading-relaxed mb-8 text-right">
+            "מעבר לתמונות המדהימות, הם הביאו תחושה של רוגע ויוקרה ליום שלנו. הם לא היו רק צלמים; הם היו אוצרים של הזיכרונות היקרים ביותר שלנו."
+          </p>
+          <div class="flex items-center gap-4 flex-row-reverse">
+            <div class="w-14 h-14 rounded-full bg-deep-emerald/10 overflow-hidden ring-2 ring-rose-gold/20">
+              <img alt="מיכל ודניאל" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/ADBb0uj4OHSORJuTiYWx2NWbRRvXKT0jVxuGrLU6vr9MZ7B0viSGTrc7OYDH65VcLfBDtyF0x9fp3Y6sj1ArgKzchMEm2lOk2VHtSXYUjMIZ-J2eVPiKEHutP8CgyIR4j6uRzwerBhNwRjr1dT9bFJZznsZMQxc82XAlgR98zcTQJrlupgNM5Op5uEY1PDi5YdOVJuBTCIP63S1XHcK_ZEwWMqHqcxIhQHS4V3zIaX76DAuCmXb0f4psSj_TAWeMHvCMwqkkSSNgJjB28g" />
+            </div>
+            <div class="text-right">
+              <h5 class="font-bold text-deep-emerald">מיכל ודניאל</h5>
+              <p class="text-sm text-rose-gold font-accent uppercase tracking-wider">קיסריה, יולי 2023</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="relative py-32 px-8 text-center bg-deep-emerald overflow-hidden">
+    <div class="absolute inset-0 opacity-10 pointer-events-none">
+      <img alt="מרקם רקע" class="w-full h-full object-cover grayscale brightness-50" src="https://lh3.googleusercontent.com/aida/ADBb0ugfync2QvSGbzYVL_22MPP3O68j9ZFUpAyFa7c8Ih-D_6PhKBfFKP_6yqs--EfIMSJvGDLucp-fCSzN2N05kfkyzIK71L1xgjjlezCDqF0ApOfRYS2HX1y9Fk6sM1o4zqZvi4AH_vb1CoPdIb__boa45oxE2ZG03RthJnTJWdOxFjvTQZqiPd5M-R51zVDeAM9nW62sogZG_xUZqFcm3HDvO7pHch6xFNz1c0BxX8Hf6p2q5uJ4ghnCxn5LmEaRF3R5Ug7k_Gd88w" />
+    </div>
+    <div class="relative z-10 max-w-3xl mx-auto space-y-8">
+      <h3 class="font-headline text-5xl text-white font-bold">מוכנים להתחיל את המסע שלכם?</h3>
+      <p class="text-white/80 text-xl font-body">מספר המקומות מוגבל בכל שנה. אנו נותנים עדיפות לעומק על פני כמות כדי להבטיח שכל סיפור יקבל את מלוא האמנות שלנו.</p>
+      <div class="pt-8">
+        <button class="bg-rose-gold text-white px-12 py-5 rounded-full font-headline text-xl tracking-wide font-bold hover:scale-105 transition-all shadow-2xl">
+          בדקו זמינות ובקשו הצעת מחיר
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="w-full bg-white border-t border-deep-emerald/5">
+    <div class="flex flex-col md:flex-row justify-between items-start gap-12 px-12 py-16 max-w-7xl mx-auto text-right">
+      <div class="space-y-6 max-w-xs">
+        <img alt="Your Story Logo" class="h-12 w-auto object-contain mb-4" src="https://lh3.googleusercontent.com/aida/ADBb0uibV-m52TzUVGuByg22gGGaZzqL5NmkrjzrCSzDZwTZWNghFCmswRIyWs0yq4tapOlA1WtiXVPLudm_zhkkUNrVPpeOg9eKa5HkJ5PygLa47WOLoZH4xV-NLjZh175Y9Z5az7GzTNdgS93kB4Q4hkl7w_55iu2XQutLaAm8nHoaycKATIIdkOIdznFbx_r-LP2Cs2AArR70G2jbIIE0Kb0VS84c1zMN0C2EoBNVd6ZAiY69E7M9sHS24j_LuGfD_ywpaHX6adDcww" />
+        <p class="text-deep-emerald/70 font-body text-sm leading-relaxed">
+          משמרים את היופי העמוק של האיחוד שלכם דרך עדשה של אלגנטיות נצחית וחום אורגני.
+        </p>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-12 w-full md:w-auto">
+        <div>
+          <h5 class="font-headline text-lg text-deep-emerald mb-4 font-bold">גלו עוד</h5>
+          <ul class="space-y-3 text-sm">
+            <li><a class="text-deep-emerald/60 hover:text-rose-gold transition-colors" href="#">פורטפוליו</a></li>
+            <li><a class="text-deep-emerald/60 hover:text-rose-gold transition-colors" href="#">החוויה</a></li>
+            <li><a class="text-deep-emerald/60 hover:text-rose-gold transition-colors" href="#">חבילות והשקעה</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="font-headline text-lg text-deep-emerald mb-4 font-bold">התחברו</h5>
+          <ul class="space-y-3 text-sm">
+            <li><a class="text-deep-emerald/60 hover:text-rose-gold transition-colors" href="#">אינסטגרם</a></li>
+            <li><a class="text-deep-emerald/60 hover:text-rose-gold transition-colors" href="#">פייסבוק</a></li>
+            <li><a class="text-deep-emerald/60 hover:text-rose-gold transition-colors" href="#">הבלוג שלנו</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="font-headline text-lg text-deep-emerald mb-4 font-bold">מידע משפטי</h5>
+          <ul class="space-y-3 text-sm">
+            <li><a class="text-deep-emerald/60 hover:text-rose-gold transition-colors" href="#">מדיניות פרטיות</a></li>
+            <li><a class="text-deep-emerald/60 hover:text-rose-gold transition-colors" href="#">תנאי שימוש</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="px-12 py-8 border-t border-deep-emerald/5 text-center">
+      <p class="text-deep-emerald/40 text-xs font-label tracking-wide uppercase">
+        © 2024 Your Story Photography. מושרשים באהבה.
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
