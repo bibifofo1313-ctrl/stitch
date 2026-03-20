@@ -5,7 +5,7 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
   <title>Your Story - צילום חתונות יוקרתי</title>
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;600;700;800&family=Heebo:wght@100;300;400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;600;700;800&family=Heebo:wght@100;300;400;700&family=Suez+One&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
   <script id="tailwind-config">
     tailwind.config = {
@@ -24,6 +24,7 @@
           },
           fontFamily: {
             "headline": ["Assistant", "sans-serif"],
+            "display": ["Suez One", "serif"],
             "body": ["Heebo", "sans-serif"],
             "label": ["Heebo", "sans-serif"],
             "accent": ["Assistant", "sans-serif"]
@@ -45,6 +46,37 @@
 
     .hero-overlay {
       background: linear-gradient(to bottom, rgba(15, 76, 63, 0.6), rgba(15, 76, 63, 0.3));
+    }
+
+    .hero-title {
+      line-height: 1.14;
+      letter-spacing: -0.01em;
+      text-wrap: balance;
+    }
+
+    .hero-heading-color {
+      color: #F7F1E8;
+    }
+
+    .hero-subtitle-color {
+      color: rgba(247, 241, 232, 0.88);
+    }
+
+    .hero-scroll-indicator {
+      bottom: 1.5rem;
+      left: 0;
+      right: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      line-height: 1;
+      text-align: center;
+    }
+
+    .hero-scroll-indicator .material-symbols-outlined {
+      display: block;
+      line-height: 1;
     }
 
     .text-rose-gold { color: #B87333; }
@@ -80,10 +112,10 @@
       <div class="absolute inset-0 hero-overlay"></div>
     </div>
     <div class="relative z-10 text-center px-6 max-w-5xl mx-auto">
-      <h1 class="font-headline text-5xl md:text-7xl lg:text-8xl text-white mb-6 leading-tight drop-shadow-lg font-bold">
+      <h1 class="font-display hero-title hero-heading-color text-5xl md:text-7xl lg:text-8xl mb-6 drop-shadow-lg font-normal">
         הסיפור שלכם: רגעים נצחיים, זיכרונות בלתי נשכחים.
       </h1>
-      <h2 class="font-accent text-xl md:text-2xl text-white/90 mb-10 tracking-[0.1em] font-light drop-shadow-md">
+      <h2 class="font-accent hero-subtitle-color text-xl md:text-2xl mb-10 tracking-[0.1em] font-light drop-shadow-md">
         צילום חתונות יוקרתי לזוגות שמעריכים אמנות.
       </h2>
       <div class="flex justify-center">
@@ -92,7 +124,7 @@
         </button>
       </div>
     </div>
-    <div class="absolute bottom-10 left-1/2 -translate-x-1/2 text-white animate-bounce">
+    <div class="absolute hero-scroll-indicator text-white animate-bounce">
       <span class="material-symbols-outlined text-4xl">keyboard_double_arrow_down</span>
     </div>
   </header>
