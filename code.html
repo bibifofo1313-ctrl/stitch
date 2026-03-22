@@ -4,6 +4,7 @@
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
   <title>Your Story - צילום חתונות יוקרתי</title>
+  <link href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='32' fill='%230F4C3F'/%3E%3Ctext x='32' y='41' text-anchor='middle' font-size='24' font-family='Georgia,serif' fill='%23F7F1E8'%3EYS%3C/text%3E%3C/svg%3E" rel="icon" />
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;600;700;800&family=Heebo:wght@100;300;400;700&family=Suez+One&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
@@ -79,6 +80,12 @@
       line-height: 1;
     }
 
+    .hero-shell {
+      min-height: calc(100svh - 5rem);
+      padding-top: 7rem;
+      padding-bottom: 3rem;
+    }
+
     .text-rose-gold { color: #B87333; }
     .bg-rose-gold { background-color: #B87333; }
     .border-rose-gold { border-color: #B87333; }
@@ -92,7 +99,9 @@
   <nav class="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-md border-b border-deep-emerald/10 shadow-sm">
     <div class="flex justify-between items-center px-8 py-3 max-w-7xl mx-auto">
       <div class="flex items-center gap-4">
-        <img alt="Your Story Logo" class="h-12 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0uibV-m52TzUVGuByg22gGGaZzqL5NmkrjzrCSzDZwTZWNghFCmswRIyWs0yq4tapOlA1WtiXVPLudm_zhkkUNrVPpeOg9eKa5HkJ5PygLa47WOLoZH4xV-NLjZh175Y9Z5az7GzTNdgS93kB4Q4hkl7w_55iu2XQutLaAm8nHoaycKATIIdkOIdznFbx_r-LP2Cs2AArR70G2jbIIE0Kb0VS84c1zMN0C2EoBNVd6ZAiY69E7M9sHS24j_LuGfD_ywpaHX6adDcww" />
+        <a aria-label="Your Story" class="inline-flex items-center" href="#">
+          <img alt="Your Story Logo" class="h-12 w-auto object-contain" src="assets/user-photos/photo-24.jpg" />
+        </a>
       </div>
       <div class="hidden md:flex items-center space-x-reverse space-x-8">
         <a class="text-deep-emerald border-b-2 border-rose-gold pb-1 font-semibold text-sm transition-colors" href="#">בית</a>
@@ -107,7 +116,7 @@
     </div>
   </nav>
 
-  <header class="relative h-screen w-full flex items-center justify-center overflow-hidden">
+  <header class="relative w-full flex items-center justify-center overflow-hidden hero-shell">
     <div class="absolute inset-0 bg-cover bg-center transition-transform duration-1000 scale-105" style="background-image: url('assets/user-photos/photo-19.jpg');">
       <div class="absolute inset-0 hero-overlay"></div>
     </div>
@@ -133,7 +142,7 @@
     <div class="grid md:grid-cols-2 gap-16 items-center">
       <div class="relative group">
         <div class="absolute -inset-4 bg-deep-emerald/5 rounded-xl transition-all group-hover:inset-0"></div>
-        <img alt="רגע אינטימי" class="relative z-10 w-full aspect-[4/5] object-cover rounded-xl shadow-2xl" src="https://lh3.googleusercontent.com/aida/ADBb0uhhbmTQcppEXqAJEByFUes-irIb64kgrh0Qe7am6QKlagHP5HLi3C2FQigb10TU8Pfv88675OsfTegCl65jThclJom-BOa1-5PHs_CriHEIKVeWsxn0fH7F_b_9-GOx0G9KXyaUWWj72-0gAcYjimNDHPio9oyAi_hgRs3XAxJK9-fNRyFpFBYRyRM9_18R3S3gMS_5ZFMlGlFJjv3cuYoqFj5mYUgxI6kGVfmU49-WJqE_gJ82AXv2SEot6zlwT2oCKyrm-3G4dQ" />
+        <img alt="רגע אינטימי" class="relative z-10 w-full aspect-[4/5] object-cover rounded-xl shadow-2xl" src="assets/user-photos/photo-23.jpg" />
       </div>
       <div class="space-y-8 text-right">
         <div class="flex justify-start md:justify-start">
@@ -287,13 +296,6 @@
           </div>
         </div>
         <div class="group relative overflow-hidden rounded-xl aspect-[3/4] cursor-pointer shadow-lg">
-          <img alt="גלריה נבחרת 19" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida/ADBb0uj4OHSORJuTiYWx2NWbRRvXKT0jVxuGrLU6vr9MZ7B0viSGTrc7OYDH65VcLfBDtyF0x9fp3Y6sj1ArgKzchMEm2lOk2VHtSXYUjMIZ-J2eVPiKEHutP8CgyIR4j6uRzwerBhNwRjr1dT9bFJZznsZMQxc82XAlgR98zcTQJrlupgNM5Op5uEY1PDi5YdOVJuBTCIP63S1XHcK_ZEwWMqHqcxIhQHS4V3zIaX76DAuCmXb0f4psSj_TAWeMHvCMwqkkSSNgJjB28g" />
-          <div class="absolute inset-0 bg-gradient-to-t from-deep-emerald/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8 text-right">
-            <span class="text-white/80 text-xs font-accent tracking-widest uppercase mb-2">גלריה נבחרת</span>
-            <h4 class="text-white font-headline text-2xl text-right">רגע 19</h4>
-          </div>
-        </div>
-        <div class="group relative overflow-hidden rounded-xl aspect-[3/4] cursor-pointer shadow-lg">
           <img alt="גלריה נבחרת 20" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" src="assets/user-photos/photo-20.jpg" />
           <div class="absolute inset-0 bg-gradient-to-t from-deep-emerald/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8 text-right">
             <span class="text-white/80 text-xs font-accent tracking-widest uppercase mb-2">גלריה נבחרת</span>
@@ -369,7 +371,7 @@
           </p>
           <div class="flex items-center gap-4 flex-row-reverse">
             <div class="w-14 h-14 rounded-full bg-deep-emerald/10 overflow-hidden ring-2 ring-rose-gold/20">
-              <img alt="אלינור ויהונתן" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/ADBb0uhhbmTQcppEXqAJEByFUes-irIb64kgrh0Qe7am6QKlagHP5HLi3C2FQigb10TU8Pfv88675OsfTegCl65jThclJom-BOa1-5PHs_CriHEIKVeWsxn0fH7F_b_9-GOx0G9KXyaUWWj72-0gAcYjimNDHPio9oyAi_hgRs3XAxJK9-fNRyFpFBYRyRM9_18R3S3gMS_5ZFMlGlFJjv3cuYoqFj5mYUgxI6kGVfmU49-WJqE_gJ82AXv2SEot6zlwT2oCKyrm-3G4dQ" />
+              <img alt="אלינור ויהונתן" class="w-full h-full object-cover" src="assets/user-photos/photo-11.jpg" />
             </div>
             <div class="text-right">
               <h5 class="font-bold text-deep-emerald">אלינור ויהונתן</h5>
@@ -383,7 +385,7 @@
           </p>
           <div class="flex items-center gap-4 flex-row-reverse">
             <div class="w-14 h-14 rounded-full bg-deep-emerald/10 overflow-hidden ring-2 ring-rose-gold/20">
-              <img alt="מיכל ודניאל" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/ADBb0uj4OHSORJuTiYWx2NWbRRvXKT0jVxuGrLU6vr9MZ7B0viSGTrc7OYDH65VcLfBDtyF0x9fp3Y6sj1ArgKzchMEm2lOk2VHtSXYUjMIZ-J2eVPiKEHutP8CgyIR4j6uRzwerBhNwRjr1dT9bFJZznsZMQxc82XAlgR98zcTQJrlupgNM5Op5uEY1PDi5YdOVJuBTCIP63S1XHcK_ZEwWMqHqcxIhQHS4V3zIaX76DAuCmXb0f4psSj_TAWeMHvCMwqkkSSNgJjB28g" />
+              <img alt="מיכל ודניאל" class="w-full h-full object-cover" src="assets/user-photos/photo-20.jpg" />
             </div>
             <div class="text-right">
               <h5 class="font-bold text-deep-emerald">מיכל ודניאל</h5>
@@ -397,7 +399,7 @@
 
   <section class="relative py-32 px-8 text-center bg-deep-emerald overflow-hidden">
     <div class="absolute inset-0 opacity-10 pointer-events-none">
-      <img alt="מרקם רקע" class="w-full h-full object-cover grayscale brightness-50" src="https://lh3.googleusercontent.com/aida/ADBb0ugfync2QvSGbzYVL_22MPP3O68j9ZFUpAyFa7c8Ih-D_6PhKBfFKP_6yqs--EfIMSJvGDLucp-fCSzN2N05kfkyzIK71L1xgjjlezCDqF0ApOfRYS2HX1y9Fk6sM1o4zqZvi4AH_vb1CoPdIb__boa45oxE2ZG03RthJnTJWdOxFjvTQZqiPd5M-R51zVDeAM9nW62sogZG_xUZqFcm3HDvO7pHch6xFNz1c0BxX8Hf6p2q5uJ4ghnCxn5LmEaRF3R5Ug7k_Gd88w" />
+      <img alt="מרקם רקע" class="w-full h-full object-cover grayscale brightness-50" src="assets/user-photos/photo-19.jpg" />
     </div>
     <div class="relative z-10 max-w-3xl mx-auto space-y-8">
       <h3 class="font-headline text-5xl text-white font-bold">מוכנים להתחיל את המסע שלכם?</h3>
@@ -413,7 +415,7 @@
   <footer class="w-full bg-white border-t border-deep-emerald/5">
     <div class="flex flex-col md:flex-row justify-between items-start gap-12 px-12 py-16 max-w-7xl mx-auto text-right">
       <div class="space-y-6 max-w-xs">
-        <img alt="Your Story Logo" class="h-12 w-auto object-contain mb-4" src="https://lh3.googleusercontent.com/aida/ADBb0uibV-m52TzUVGuByg22gGGaZzqL5NmkrjzrCSzDZwTZWNghFCmswRIyWs0yq4tapOlA1WtiXVPLudm_zhkkUNrVPpeOg9eKa5HkJ5PygLa47WOLoZH4xV-NLjZh175Y9Z5az7GzTNdgS93kB4Q4hkl7w_55iu2XQutLaAm8nHoaycKATIIdkOIdznFbx_r-LP2Cs2AArR70G2jbIIE0Kb0VS84c1zMN0C2EoBNVd6ZAiY69E7M9sHS24j_LuGfD_ywpaHX6adDcww" />
+        <img alt="Your Story Logo" class="h-12 w-auto object-contain mb-4" src="assets/user-photos/photo-24.jpg" />
         <p class="text-deep-emerald/70 font-body text-sm leading-relaxed">
           משמרים את היופי העמוק של האיחוד שלכם דרך עדשה של אלגנטיות נצחית וחום אורגני.
         </p>
